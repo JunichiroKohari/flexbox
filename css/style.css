@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* WEBフォントというものを読み込んでいます。このコメントは削除してください。 */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap');
 
 /* 初期設定 */
@@ -22,7 +21,16 @@
     background: #F2F2F2;
 }
 
+.taskNum {
+    font-size: 2rem;
+    text-align: center;
+}
+
 /* コンテンツ */
+.container > div {
+    width: 25%;
+    padding: 0.5em 1.3em;
+}
 .boxA {
     background: #F08E38;
 }
@@ -32,24 +40,64 @@
 .boxC{
     background: #5485F0;
 }
-/* 上記のように、共通しているようなスタイルは上の方に書いておくと良いでしょう。このコメントは削除してください。 */
+.boxD{
+    background: #ee89d6;
+}
+.boxE{
+    background: #e6cd20;
+}
 
 /* ① */
 .flex-container1 {
     justify-content: center;
     padding-bottom: 5em;
 }
-.flex-container1 > .boxA, .flex-container1 > .boxB, .flex-container1 > .boxC {
-    width: 25%;
-    padding: 0.5em 1.3em;
-}
 
 /* ② */
+.flex-container2 {
+    justify-content: space-between;
+    padding-bottom: 7em;
+}
 
 /* ③ */
+.flex-container3 {
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
 
 /* ④ */
+.flex-container4 {
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+.flex-container4 > .boxA, .flex-container4 > .boxB {
+    width: 44%;
+}
+.flex-container4 > .boxC {
+    width: 25%;
+}
+.flex-container4 > .boxD {
+    width: 11%;
+}
+.flex-container4 > .boxE {
+    width: 52%;
+}
 
 /* ⑤ */
+.flex-container5 {
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    padding-bottom: 6em;
+}
 
 /* ⑥ */
+.flex-container6 {
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0em;
+}
+.flex-container6 > .boxB {
+    margin-bottom: 10em;
+}
